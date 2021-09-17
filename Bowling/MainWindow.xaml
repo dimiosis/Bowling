@@ -1,0 +1,27 @@
+﻿<Window x:Class="Bowling.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:view="clr-namespace:Bowling.Views"
+        Title="Bowling" Height="450" Width="800"
+        DataContext="{Binding Main, Source={StaticResource Locator}}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <UniformGrid Rows="1" Columns="10">
+            <view:CellView/>
+            <view:CellView/>
+            <view:CellView/>
+            <view:CellView/>
+            <view:CellView/>
+            <view:CellView/>
+            <view:CellView/>
+            <view:CellView/>
+            <view:CellView/>
+            <view:CellView/>
+        </UniformGrid>
+        <Button Content="Roll" Command="{Binding RollCommand}" Grid.Row="2"/>
+    </Grid>
+</Window>
