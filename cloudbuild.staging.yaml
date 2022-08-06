@@ -25,7 +25,7 @@ steps:
   id: DEPLOY
 
 substitutions:
-    _FUNCTION_PROJECT : stam-prod
+    _FUNCTION_PROJECT : stam
     _FUNCTION_NAME    : my-nodejs-app
     _FUNCTION_REGION  : northamerica-northeast1
     _FUNCTION_RUNTIME : nodejs14
