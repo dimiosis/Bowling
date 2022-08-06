@@ -1,6 +1,8 @@
-var http = require('http');
+//-----------------------------------------------------------------------------
+// NodeJS App for GCP Cloud Functions deployed via GCP Cloud Build Triggers
+//-----------------------------------------------------------------------------
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Hello World, from Dmitriy !');
-}).listen(8080);
+exports.helloWorld = (req, res) => {
+  const message="<font color='blue'>Hello from Dmitriy!</font><br><b>App Version 1.1</b>";
+  res.status(200).send(message);
+};
