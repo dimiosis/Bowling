@@ -25,8 +25,8 @@ steps:
   id: DEPLOY
 
 substitutions:
-    _FUNCTION_PROJECT : stam
-    _FUNCTION_NAME    : stam-nodejs
-    _FUNCTION_REGION  : northamerica-northeast1
+    _FUNCTION_PROJECT : Prod
+    _FUNCTION_NAME    : stam-ok
+    _FUNCTION_REGION  : us-central1
     _FUNCTION_RUNTIME : nodejs16
     _ENTRY_POINT      : helloWorld
